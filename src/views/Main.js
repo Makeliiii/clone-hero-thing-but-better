@@ -8,19 +8,21 @@ const Main = () => {
 
     const onUpload = e => {
         const file = e.target.files[0]
-        console.log(file)
         const reader = new FileReader()
         reader.onload = e => {
             const result = e.target.result
             const jsonFile = JSON.parse(result)
-            console.log(jsonFile)
+            setCharts(jsonFile)
         }
 
         reader.readAsText(file)
     }
 
     return (
-        <Upload onUpload={onUpload} />
+        <>
+            <Upload onUpload={onUpload} />
+            <button onClick={() => console.log(charts)}>log charts</button>
+        </>
     )
 }
 
