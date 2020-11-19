@@ -7,15 +7,19 @@ const Main = () => {
     const [charts, setCharts] = useState([])
 
     const onUpload = e => {
-        const file = e.target.files[0]
-        const reader = new FileReader()
-        reader.onload = e => {
-            const result = e.target.result
-            const jsonFile = JSON.parse(result)
-            setCharts(jsonFile)
+        try {
+            const file = e.target.files[0]
+            const reader = new FileReader()
+            reader.onload = e => {
+                const result = e.target.result
+                const jsonFile = JSON.parse(result)
+                setCharts(jsonFile)
+            }
+    
+            reader.readAsText(file)
+        } catch (error) {
+            console.log(error)
         }
-
-        reader.readAsText(file)
     }
 
     return (
