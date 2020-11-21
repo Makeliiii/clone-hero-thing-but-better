@@ -1,0 +1,26 @@
+@import "_colors.scss";
+
+.upload {
+    border: 1px solid $violet;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 6px 18px;
+    margin: 10px;
+    background-color: $violet;
+    color: $background;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    input[type="file"] {
+        display: none;
+    }
+}
+
+.upload:hover {
+    background-color: $background;
+    color: $white;
+}
+
+.upload:focus {
+    outline: none;
+}

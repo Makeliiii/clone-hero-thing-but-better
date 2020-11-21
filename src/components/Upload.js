@@ -1,8 +1,11 @@
 import React from 'react'
 
+import styles from '../styles/upload.module.scss'
+
 const Upload = ({ onUpload }) => {
     return (
-        <label for="file">
+        <label htmlFor="file" className={styles.upload}>
+            Upload songs.json
             <input type="file" name="file" id="file" accept="application/json" onChange={e => onUpload(e)} />
         </label>
     )
