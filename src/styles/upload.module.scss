@@ -2,12 +2,13 @@
 
 .upload {
     border: 1px solid $violet;
-    border-radius: 20px;
+    border-radius: 92px;
     display: inline-block;
-    padding: 6px 18px;
+    padding: 24px 92px;
     margin: 10px;
     background-color: $violet;
     color: $background;
+    font-size: 22px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
