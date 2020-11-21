@@ -2,7 +2,9 @@ import React from 'react'
 
 const Upload = ({ onUpload }) => {
     return (
-        <input type="file" id="jsonFile" accept="application/json" onChange={e => onUpload(e)} />
+        <label for="file">
+            <input type="file" name="file" id="file" accept="application/json" onChange={e => onUpload(e)} />
+        </label>
     )
 }
 
