@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import Upload from '../components/Upload'
 import Error from '../components/Error'
 
+import styles from '../styles/main.module.scss'
+
 const Main = () => {
     const [charts, setCharts] = useState([])
     const [isJSON, setIsJSON] = useState(true)
@@ -16,7 +18,7 @@ const Main = () => {
 
             if (file.type !== "application/json") {
                 setIsJSON(false)
-                return setErrorText('File needs to be a JSON file.')
+                return setErrorText('File needs to be a JSON file!')
             }
 
             const reader = new FileReader()
@@ -33,11 +35,11 @@ const Main = () => {
     }
 
     return (
-        <>
+        <div className={styles.main}>
             {!isJSON ? <Error errorText={errorText} setIsJSON={setIsJSON} /> : null}
             <Upload onUpload={onUpload} />
             <button onClick={() => console.log(charts)}>log charts</button>
-        </>
+        </div>
     )
 }
 
