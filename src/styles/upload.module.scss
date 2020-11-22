@@ -2,12 +2,17 @@
 
 .upload {
     border: 1px solid $violet;
+    grid-row-start: 2;
+    position: sticky;
     border-radius: 92px;
-    display: inline-block;
-    padding: 24px 92px;
+    max-height: 26px;
+    width: 50%;
+    max-width: 600px;
+    padding: 24px 0;
     margin: 10px;
     background-color: $violet;
     color: $background;
+    text-align: center;
     font-size: 22px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
