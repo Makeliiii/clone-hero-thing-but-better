@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // import views
 import Main from './views/Main'
 
 const App = () => {
+	const [charts, setCharts] = useState([])
+	
   	return (
 		<>
-	  		<Main />
+	  		<Main setCharts={setCharts} />
 		</>
   	)
 }

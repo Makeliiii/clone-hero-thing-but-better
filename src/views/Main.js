@@ -6,8 +6,7 @@ import Error from '../components/Error'
 
 import styles from '../styles/main.module.scss'
 
-const Main = () => {
-    const [charts, setCharts] = useState([])
+const Main = ({setCharts}) => {
     const [isJSON, setIsJSON] = useState(true)
     const [errorText, setErrorText] = useState(null)
 
@@ -38,7 +37,6 @@ const Main = () => {
         <div className={styles.main}>
             {!isJSON ? <Error errorText={errorText} setIsJSON={setIsJSON} /> : null}
             <Upload onUpload={onUpload} />
-            <button onClick={() => console.log(charts)}>log charts</button>
         </div>
     )
 }
