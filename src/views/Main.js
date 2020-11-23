@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 // import components
-import Upload from '../components/Upload'
-import Error from '../components/Error'
+import Upload from '../components/Main/Upload'
+import Error from '../components/Main/Error'
 
 import styles from '../styles/main.module.scss'
 
