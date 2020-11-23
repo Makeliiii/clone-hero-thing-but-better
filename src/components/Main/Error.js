@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { ReactComponent as Close } from '../icons/close.svg'
-import styles from '../styles/error.module.scss'
+import { ReactComponent as Close } from '../../icons/close.svg'
+import styles from '../../styles/error.module.scss'
 
 const Error = ({ errorText, setIsJSON }) => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from '../styles/upload.module.scss'
+import styles from '../../styles/upload.module.scss'
 
 const Upload = ({ onUpload }) => {
     return (
