@@ -1,12 +1,12 @@
 import React from 'react'
 
 // components
-import TableHead from '../components/Charts/TableHead'
+import Table from '../components/Charts/Table'
 
 const Charts = ({charts}) => {
     return (
         <>
-            <TableHead />
+            <Table charts={charts} />
             <button onClick={() => console.log(charts)}>aösldkfhj</button>
         </>
     )
