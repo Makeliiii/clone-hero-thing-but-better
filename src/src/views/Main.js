@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Upload from '../components/Main/Upload'
 import Error from '../components/Main/Error'
 
-import styles from '../styles/main.module.scss'
+import styles from '../styles/main/main.module.scss'
 
 const Main = ({setCharts}) => {
     const [isJSON, setIsJSON] = useState(true)
