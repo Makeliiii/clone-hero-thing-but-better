@@ -4,9 +4,12 @@ import React from 'react'
 import TableHead from './TableHead'
 import TableBody from './TableBody'
 
+// styling
+import styles from '../../styles/charts/table.module.scss'
+
 const Table = ({charts}) => {
     return (
-        <table>
+        <table className={styles.table} cellSpacing="1">
             <TableHead />
             <TableBody charts={charts} />
         </table>
