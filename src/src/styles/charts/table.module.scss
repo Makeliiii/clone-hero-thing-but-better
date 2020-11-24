@@ -1,0 +1,8 @@
+.table {
+    border-collapse: collapse;
+    width: 80vw;
+    tbody { display: block; overflow-y: scroll; height: 80vh; }
+    td, th {
+        border: 1px solid black;
+    }
+}
